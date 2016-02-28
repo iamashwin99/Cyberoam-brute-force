@@ -1,0 +1,21 @@
+import requests
+import subprocess
+
+username=[]
+
+with open("username.txt") as f:
+    username = f.readlines()
+
+x=open('vai.txt','w')
+    
+for i in username :
+	i = i.replace("\n","")      
+	k=i[:2]
+	if(k == "15"):
+		print i	
+		x.write(i)
+		x.write("\n")
+		
+		
+
+
